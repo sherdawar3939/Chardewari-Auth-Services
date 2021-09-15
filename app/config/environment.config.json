@@ -1,0 +1,61 @@
+{
+    "db": {
+        "development": {
+            "username": "root",
+            "password": "",
+            "host": "localhost",
+            "port": 2701,
+            "database": "chardewari-auth-development"
+        },
+        "testing": {
+            "username": "",
+            "password": "",
+            "host": "",
+            "port": 2701,
+            "database": ""
+        },
+        "staging": {
+            "username": "",
+            "password": "",
+            "host": "",
+            "port": 2701,
+            "database": ""
+        },
+        "production": {
+            "username": "chardewari-auth",
+            "password": "ch@rdewari_auth1",
+            "host": "localhost",
+            "port": 3306,
+            "database": "chardewari-auth-dev"
+        }
+    },
+    "FORCE_DB_SYNC": "false",
+    "jwtOptions": {
+        "secretOrKey": "boilerplate",
+        "ignoreExpiration": true,
+        "passReqToCallback": true
+    },
+    "awsConfig": {
+        "accessKeyId": "AKIAJYMDITLIZFZMQ3VA",
+        "secretAccessKey": "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",
+        "region": "ap-southeast-1"
+    },
+    "Bucket": "chardewaridev",
+    "rabbitMQ": {
+        "connection": {
+            "development": "amqp://localhost",
+            "staging": "",
+            "production": "amqp://cdadmin:iEgdra07V5SFbD5f@5.189.138.111"
+        },
+        "exchange": "CDExchange",
+        "queue": "processImageQueue",
+        "binding_keys": [
+            "propertyImages",
+            "launchingImages",
+            "productImages",
+            "servicesImages",
+            "companyProfileImages",
+            "userImages"
+        ]
+    }
+}
